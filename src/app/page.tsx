@@ -41,9 +41,6 @@ const HomePage: React.FC = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* Navigation */}
-            <Navbar />
-
             <main>
                 {/* Hero Section with Parallax */}
                 <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -136,13 +133,7 @@ const HomePage: React.FC = () => {
                         products={featuredProducts}
                     />
                 </section>
-
-                {/* Newsletter Section */}
-                <SubscribeSection />
             </main>
-
-            {/* Footer */}
-            <Footer />
         </div>
     );
 };

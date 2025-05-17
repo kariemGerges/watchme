@@ -1,3 +1,4 @@
+'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
@@ -187,10 +188,10 @@ const Navbar = () => {
 
 // Navigation items
 const navItems = [
-    { label: 'Men', href: 'pages/men' },
-    { label: 'Women', href: 'pages/women' },
-    { label: 'Limited Edition', href: 'pages/limitedEdition' },
-    { label: 'About', href: 'pages/about' },
+    { label: 'Men', href: '/men' },
+    { label: 'Women', href: '/women' },
+    { label: 'Limited Edition', href: '/limitedEdition' },
+    { label: 'About', href: '/about' },
 ];
 
 export default Navbar;
