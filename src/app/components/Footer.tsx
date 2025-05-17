@@ -15,9 +15,6 @@ const Footer: React.FC = () => {
                         <h3 className="font-bold text-lg mb-4">Shop</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li className="hover:text-white transition-colors cursor-pointer">
-                                Collections
-                            </li>
-                            <li className="hover:text-white transition-colors cursor-pointer">
                                 Men
                             </li>
                             <li className="hover:text-white transition-colors cursor-pointer">

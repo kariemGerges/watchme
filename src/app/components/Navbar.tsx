@@ -187,11 +187,10 @@ const Navbar = () => {
 
 // Navigation items
 const navItems = [
-  { label: 'Collections', href: '/collections' },
-  { label: 'Men', href: '/men' },
-  { label: 'Women', href: '/women' },
-  { label: 'Limited Edition', href: '/limited-edition' },
-  { label: 'About', href: '/about' },
+    { label: 'Men', href: 'pages/men' },
+    { label: 'Women', href: 'pages/women' },
+    { label: 'Limited Edition', href: 'pages/limitedEdition' },
+    { label: 'About', href: 'pages/about' },
 ];
 
 export default Navbar;
