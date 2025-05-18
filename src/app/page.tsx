@@ -9,14 +9,12 @@ const featuredProducts = rawFeaturedProducts.map((product) => ({
 }));
 
 // Components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import SubscribeSection from './components/HomePage/SubscribeSection';
 import ProductSlider from './components/HomePage/ProductSlider';
 import FeaturesSection from './components/HomePage/FeaturesSection';
 import FeaturedWatchSection from './components/HomePage/FeaturedWatchSection';
 import CategoriesSection from './components/HomePage/CategoriesSection';
 import OurCollectionsSection from './components/HomePage/OurCollectionsSection';
+import TestimonialCards from './components/TestimonialCards';
 
 const HomePage: React.FC = () => {
     const [scrollY, setScrollY] = useState<number>(0);
@@ -132,6 +130,9 @@ const HomePage: React.FC = () => {
                         title="Featured"
                         products={featuredProducts}
                     />
+                </section>
+                <section className="bg-black">
+                    <TestimonialCards />
                 </section>
             </main>
         </div>

@@ -28,3 +28,24 @@ export type Feature = {
     description: string;
     icon: JSX.Element;
 };
+
+export type WatchLimitedEdition = {
+    id: number;
+    name: string;
+    price: string;
+    description: string;
+    features: string[];
+    image: string;
+};
+
+// Product type definition
+export type MainProduct = {
+    id: number;
+    name: string;
+    price: number;
+    rating: number;
+    image: string;
+    category: string[];
+    new: boolean;
+    bestseller: boolean;
+};

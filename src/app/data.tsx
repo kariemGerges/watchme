@@ -1,5 +1,5 @@
 // src/app/data.tsx
-import { Product, Category, Feature, Collection } from './types';
+import { Product, Category, Feature, Collection, WatchLimitedEdition, MainProduct } from './types';
 import React from 'react';
 
 export const featuredProducts: Product[] = [
@@ -151,5 +151,136 @@ export const features: Feature[] = [
                 />
             </svg>
         ),
+    },
+];
+
+
+export const limitedEditionWatches: WatchLimitedEdition[] = [
+    {
+        id: 1,
+        name: 'Heritage 1973 Chronograph',
+        price: '$4,995',
+        description:
+            'A celebration of our founding year, this timepiece captures the essence of classic watchmaking with modern precision.',
+        features: [
+            'Limited to 50 pieces',
+            'Swiss automatic movement',
+            'Sapphire crystal',
+            '50m water resistance',
+        ],
+        image: '/api/placeholder/480/480',
+    },
+    {
+        id: 2,
+        name: 'Golden Jubilee Tourbillon',
+        price: '$12,750',
+        description:
+            'Commemorating five decades of excellence, the Golden Jubilee features our most sophisticated movement.',
+        features: [
+            'Limited to 25 pieces',
+            'In-house tourbillon',
+            '18k gold accents',
+            '100m water resistance',
+        ],
+        image: '/api/placeholder/480/480',
+    },
+    {
+        id: 3,
+        name: 'Black Diamond Edition',
+        price: '$8,250',
+        description:
+            'Elegance meets durability in this striking timepiece featuring black diamond hour markers.',
+        features: [
+            'Limited to 35 pieces',
+            'Black PVD coating',
+            'Diamond markers',
+            '200m water resistance',
+        ],
+        image: '/api/placeholder/480/480',
+    },
+];
+
+
+export // Sample watch data
+const watches: MainProduct[] = [
+    {
+        id: 1,
+        name: 'Chronograph Elite',
+        price: 299.99,
+        rating: 4.7,
+        image: '/api/placeholder/300/300',
+        category: ['luxury', 'chronograph'],
+        new: false,
+        bestseller: true,
+    },
+    {
+        id: 2,
+        name: 'Diver Pro 200m',
+        price: 349.99,
+        rating: 4.8,
+        image: '/api/placeholder/300/300',
+        category: ['sport', 'waterproof'],
+        new: true,
+        bestseller: false,
+    },
+    {
+        id: 3,
+        name: 'Classic Gold',
+        price: 499.99,
+        rating: 4.9,
+        image: '/api/placeholder/300/300',
+        category: ['luxury', 'dress'],
+        new: false,
+        bestseller: true,
+    },
+    {
+        id: 4,
+        name: 'Sport Digital',
+        price: 129.99,
+        rating: 4.5,
+        image: '/api/placeholder/300/300',
+        category: ['sport', 'digital'],
+        new: false,
+        bestseller: false,
+    },
+    {
+        id: 5,
+        name: 'Minimalist Black',
+        price: 199.99,
+        rating: 4.6,
+        image: '/api/placeholder/300/300',
+        category: ['casual', 'dress'],
+        new: true,
+        bestseller: false,
+    },
+    {
+        id: 6,
+        name: 'Pilot Chronometer',
+        price: 399.99,
+        rating: 4.7,
+        image: '/api/placeholder/300/300',
+        category: ['luxury', 'sport'],
+        new: false,
+        bestseller: false,
+    },
+    {
+        id: 7,
+        name: 'Vintage 1973 Limited',
+        price: 899.99,
+        rating: 5.0,
+        image: '/api/placeholder/300/300',
+        category: ['luxury', 'limited'],
+        new: false,
+        bestseller: true,
+    },
+    {
+        id: 8,
+        name: 'Smart Connect',
+        price: 249.99,
+        rating: 4.4,
+        image: '/api/placeholder/300/300',
+        category: ['smart', 'digital'],
+        new: true,
+        bestseller: false,
     },
 ];
