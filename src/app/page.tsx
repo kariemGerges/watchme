@@ -16,6 +16,12 @@ import CategoriesSection from './components/HomePage/CategoriesSection';
 import OurCollectionsSection from './components/HomePage/OurCollectionsSection';
 import TestimonialCards from './components/TestimonialCards';
 
+// import images
+import mainImage from '@/app/assets/images/w1.jpg';
+
+
+
+
 const HomePage: React.FC = () => {
     const [scrollY, setScrollY] = useState<number>(0);
 
@@ -45,9 +51,11 @@ const HomePage: React.FC = () => {
                     <div
                         className="absolute inset-0 z-0 bg-cover bg-center"
                         style={{
-                            transform: `translateY(${scrollY * 0.5}px)`,
-                            backgroundImage: `url("/pictures/bg1.jpeg")`,
+                            transform: `translateY(${scrollY * 0.6}px)`,
+                            backgroundImage: `url("/pictures/w1.jpg")`,
+                            
                             filter: 'brightness(0.6)',
+
                         }}
                     />
                     <div className="container mx-auto px-4 z-10 text-center">
@@ -86,6 +94,7 @@ const HomePage: React.FC = () => {
                             opacity: Math.max(0, 1 - scrollY * 0.005),
                         }}
                     >
+                        {/* Scroll Down Indicator */}
                         <div className="animate-bounce">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -102,11 +111,12 @@ const HomePage: React.FC = () => {
                                 />
                             </svg>
                         </div>
+
                     </div>
                 </section>
                 {/* Featured Watch Section */}
                 <section className="relative bg-gradient-to-b from-black to-gray-900 py-16 md:py-24">
-                    <FeaturedWatchSection />
+                    <FeaturedWatchSection scrollY={scrollY} />
                 </section>
 
                 {/* Categories */}
@@ -116,7 +126,7 @@ const HomePage: React.FC = () => {
 
                 {/* Our Collections */}
                 <section className="relative bg-black py-16 md:py-24">
-                    <OurCollectionsSection />
+                    <OurCollectionsSection scrollY={scrollY} />
                 </section>
 
                 {/* Features Section */}

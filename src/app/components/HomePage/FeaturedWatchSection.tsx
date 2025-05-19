@@ -1,4 +1,4 @@
-export default function FeaturedWatchSection() {
+export default function FeaturedWatchSection({ scrollY }: { scrollY: number }) {
     return (
         <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
