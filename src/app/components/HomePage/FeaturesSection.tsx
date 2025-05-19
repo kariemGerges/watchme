@@ -1,7 +1,7 @@
 import React from "react";
 import { features } from "@/app/data";
 
-export default function FeaturesSection() {
+export default function FeaturesSection({ scrollY }: { scrollY: number }) {
     return (
         <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">

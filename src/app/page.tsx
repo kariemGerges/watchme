@@ -121,7 +121,7 @@ const HomePage: React.FC = () => {
 
                 {/* Features Section */}
                 <section className="bg-gradient-to-b from-gray-900 to-black py-16 md:py-24">
-                    <FeaturesSection />
+                    <FeaturesSection scrollY={scrollY} />
                 </section>
 
                 {/* Product Showcase */}
