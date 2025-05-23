@@ -50,9 +50,9 @@ export const featuredProducts: Product[] = [
 ];
 
 export const categories: Category[] = [
-    { name: "Men's Collection", image: '/window.svg' },
-    { name: "Women's Collection", image: '/window.svg' },
-    { name: 'Limited Editions', image: '/window.svg' },
+    { name: "Men's Collection", image: '/pictures/man.jpg' },
+    { name: "Women's Collection", image: '/pictures/woman.jpg' },
+    { name: 'Limited Editions', image: '/pictures/limited.jpg' },
 ];
 
 export const collections: Collection[] = [

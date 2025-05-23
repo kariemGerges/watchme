@@ -16,7 +16,7 @@ export default function FeaturedWatchSection({ scrollY }: { scrollY: number }) {
                         <div
                             className="absolute inset-0 bg-cover bg-center"
                             style={{
-                                backgroundImage: `url("/pictures/bg1.jpeg")`,
+                                backgroundImage: `url("/pictures/w2.jpg")`,
                                 transform: `scale(${
                                     1 + Math.min((scrollY - 500) * 0.0002, 0.2)
                                 })`,
@@ -51,7 +51,7 @@ export default function FeaturedWatchSection({ scrollY }: { scrollY: number }) {
                                     <div
                                         className="h-full w-full bg-cover bg-center"
                                         style={{
-                                            backgroundImage: `url("/window.svg")`,
+                                            backgroundImage: `url("/pictures/w${index}.jpg")`,
                                         }}
                                     />
                                 </div>
